@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #f8f8f800;
+    padding: 5% 5%;
+    font-family: 'poppins', sans-serif;
+}
+
+
+.container{
+    display: flex;
+}
+
+.ticket-area{
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #F88DAD;
+    width: 500px;
+    
+}
+
+.ticket-1{
+    display: flex;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+
+.event-discount{
+    position: absolute;
+    top: 120px;
+    height: 50px;
+    padding: 25px 20px;
+}
+
+.event-image{
+    position: absolute;
+    height: 150px;
+    bottom: 0;
+    right: 0;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    height: 30px;
+
+    
+}
+
+h2{
+    position: absolute;
+    font-size: 30px;
+    padding: 5px 20px;
+    top: 0;
+    color: #F8F8F8;
+    text-wrap: wrap;
+    margin-top: 30px;
+}
+p{
+    padding: 0px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #69747C;
+    text-wrap: wrap;
+}
+
+.para{
+    position: absolute;
+    padding: 15px 20px;
+    font-size: 15px;
+    top: 45px;
+    font-weight: 500;
+    color: #F9E9EC;
+    text-wrap: wrap;
+}
+
+.ticket-2{
+    height: 200px;
+    width: 280px;
+    background-color: #E3DCC2;
+    position: relative;
+    padding: 30px;
+ 
+}
+
+.heading-ticket-2{
+    margin: 10px 50px;
+}
+
+.para-ticket-2{
+    font-size: 20px;
+    text-wrap: wrap;
+}
+
+.barcode{
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+
+/* For mobile phones */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .ticket-area {
+        padding: 10px;
+    }
+
+    .ticket-2{
+        width: 90%;
+    }
+
+    .event-image{
+        height: 120px;
+    }
+    .event-discount{
+        height: 15px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    .para{
+        font-size: 15px;
+    }
+    .para-ticket-2{
+        font-size: 10px;
+    }
+
+
+
+}
+
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .ticket-area {
+        padding: 15px;
+        width: 100%;
+    }
+    .ticket-2{
+        width: 100%;
+    }
+
+    p{
+        font-size: 5;
+    }
+    .barcode{
+        height: 40px;
+    }
+    
+    .para-ticket-2{
+        font-size: 15px;
+    }
+
+    
+}
+
+/* For laptops and desktops */
+@media only screen and (min-width: 769px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .ticket-area {
+        padding: 20px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    
+
+}
+
+
+
+
